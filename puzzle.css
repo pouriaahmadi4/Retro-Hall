@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Atomic+Age&family=Bungee&family=Bungee+Shade&family=Calistoga&family=DotGothic16&family=Libre+Baskerville&family=Monoton&family=Nanum+Pen+Script&family=Press+Start+2P&family=VT323&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(https://forums.libretro.com/uploads/default/original/2X/9/928ae6bbbd636c4d41c5681db4c85368c4dd6833.png);
+    background-color:green;
+    background-blend-mode: overlay;
+    background-size: contain;
+  box-sizing: border-box;
+}
+
+header {
+  background: #122e46;
+  padding: 10px;
+  z-index: 100;
+  position: sticky;
+  top: 0px;
+  height: 21vh;
+}
+.navbar {
+  list-style: none;
+  border-radius: 10px;
+  background-color: #122e46;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+  align-items: center;
+  text-align: center;
+  max-width: 100%;
+  gap: 10px;
+}
+
+.navbar a {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  color: #2196f3;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-family: 'Press Start 2P', cursive;
+  font-weight: 400;
+  line-height: 17px;
+  font-size: 12px;
+  overflow: hidden;
+  transition: 0.2s;
+  border-radius: 3px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.navbar a:hover {
+  color: #141618;
+  background: #2196f3;
+  box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3 , 0 0 70px #2196f3  ;
+  transition-delay: 1s;
+}
+
+.navbar a span {
+  position: absolute;
+  display: block;
+}
+
+.navbar a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg,transparent,#2196f3);
+
+}
+
+.navbar a:hover span:nth-child(1) {
+  left: 100%;
+  transition: 1s;
+
+}
+
+.navbar a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg,transparent,#2196f3);
+
+}
+
+.navbar a:hover span:nth-child(3) {
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+
+.navbar a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg,transparent,#2196f3);
+
+}
+
+.navbar a:hover span:nth-child(2) {
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+
+.navbar a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg,transparent,#2196f3);
+
+}
+
+.navbar a:hover span:nth-child(4) {
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+}
+
+.aps {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height:50px;
+    left: 25%;
+    border-radius: 5px;
+    background-color: #122e46;
+}
+
+.table1 {
+    width: 100%;
+    height: 100%;
+    cursor: context-menu;
+    padding: 0;
+    position: absolute;
+}
+
+.white1 {
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Atomic Age', cursive;
+    border-collapse: collapse;
+    border: 2px solid black;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.white2 {
+    background-color: transparent;
+    width: 10px;
+    height: 10px;
+    font-size: 8px;
+    font-family: 'Atomic Age', cursive;
+    border-collapse: collapse;
+    border: 2px solid transparent;
+    text-align: center;
+}
+
+.dna {
+    position: relative;
+    display: block;
+    width: 60vw;
+    height:60vw;
+    border-radius: 5px;
+    padding:40px;
+    margin: 40px;
+}
+
+.jadval {
+    width: 100%;
+    height: 100%;
+    cursor: context-menu;
+    padding: 0;
+    position: absolute;
+}
+
+.sefid1 {
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Calistoga', cursive;
+    border-collapse: collapse;
+    border: 1px solid black;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 2px;
+}
+
+.sefid2 {
+    background-color: transparent;
+    width: 12px;
+    height: 12px;
+    font-size: 8px;
+    font-family: 'Calistoga', cursive;
+    border-collapse: collapse;
+    border: 2px solid transparent;
+    text-align: center;
+}
+
+.whole {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.jadval span {
+    font-size: small;
+    position: relative;
+    bottom: 20px;
+    right: 10px;
+}
+
+.clues h2 {
+    padding: 15px 25px;
+    color: #28206d;
+  }
+
+.clues p {
+    padding: 15px 25px;
+  }
+
+.clues {
+    position: relative;
+    background-color: #9abdbd;
+    min-height: 115vh;
+    font-family: 'Libre Baskerville', serif;
+    padding: 1rem;
+    margin: 10px;
+    border: solid 2px rgb(16, 16, 54);
+    border-radius: 5px;
+    margin-top: 100px;
+}
+
+.cluelist {
+    background-color: inherit;
+    margin-top: 15px;
+    padding-left: 30px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    align-items: flex-start;
+}
+.cluelist li {
+    margin-bottom: 7px;
+    line-height: 25px;
+}
+
+.cluelist span {
+    font-weight: bold;
+    font-style: italic;
+}
