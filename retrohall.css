@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Atomic+Age&family=Bungee&family=Bungee+Shade&family=DotGothic16&family=Monoton&family=Press+Start+2P&family=VT323&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(https://forums.libretro.com/uploads/default/original/2X/9/928ae6bbbd636c4d41c5681db4c85368c4dd6833.png);
+    background-color:green;
+    background-blend-mode: overlay;
+    background-size: contain;
+  box-sizing: border-box;
+}
+
+header {
+  background: #122e46;
+  padding: 10px;
+  z-index: 100;
+  position: sticky;
+  top: 0px;
+}
+.navbar {
+  list-style: none;
+  border-radius: 10px;
+  background-color: #122e46;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+  align-items: center;
+  text-align: center;
+  max-width: 100%;
+  gap: 10px;
+}
+
+.navbar a {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  color: #2196f3;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-family: 'Press Start 2P', cursive;
+  font-weight: 400;
+  line-height: 17px;
+  font-size: 12px;
+  overflow: hidden;
+  transition: 0.2s;
+  border-radius: 3px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.navbar a:hover {
+  color: #141618;
+  background: #2196f3;
+  box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3 , 0 0 70px #2196f3  ;
+  transition-delay: 1s;
+}
+
+.navbar a span {
+  position: absolute;
+  display: block;
+}
+
+.navbar a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg,transparent,#2196f3);
+
+}
+
+.navbar a:hover span:nth-child(1) {
+  left: 100%;
+  transition: 1s;
+
+}
+
+.navbar a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg,transparent,#2196f3);
+
+}
+
+.navbar a:hover span:nth-child(3) {
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+
+.navbar a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg,transparent,#2196f3);
+
+}
+
+.navbar a:hover span:nth-child(2) {
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+
+.navbar a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg,transparent,#2196f3);
+
+}
+
+.navbar a:hover span:nth-child(4) {
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+}
+.joy{
+  margin: 20px;
+  display: inline-block;
+  position: relative;
+  bottom: 10px;
+  left: 30%;
+  width: 6px;
+  height: 6px;
+  box-shadow:  12px 0 0 #b0b9be, 18px 0 0 #b0b9be, 24px 0 0 #b0b9be,
+  30px 0 0 #b0b9be, 36px 0 0 #b0b9be, 42px 0 0 #b0b9be,
+  48px 0 0 #b0b9be, 54px 0 0 #b0b9be, 60px 0 0 #b0b9be,
+  66px 0 0 #b0b9be, 72px 0 0 #b0b9be, 6px 6px 0 #b0b9be,
+  78px 6px 0 #b0b9be, 0 12px 0 #b0b9be, 66px 12px 0 #27a9d1,
+  84px 12px 0 #b0b9be,0 18px 0 #b0b9be, 60px 18px 0 #53c426, 72px 18px 0 #ee0404,
+  84px 18px 0 #b0b9be, 0 24px 0 #b0b9be, 18px 24px 0 #b0b9be,
+  12px 18px 0 #b0b9be, 24px 18px 0 #b0b9be, 18px 18px 0 #b0b9be,
+  18px 12px 0 #b0b9be, 66px 24px 0 #fffb03, 84px 24px 0 #b0b9be,
+  36px 24px 0 #b0b9be, 48px 24px 0 #b0b9be, 6px 30px 0 #b0b9be,
+  12px 36px 0 #b0b9be, 18px 36px 0 #b0b9be, 24px 36px 0 #b0b9be,
+  30px 36px 0 #b0b9be, 36px 36px 0 #b0b9be, 42px 36px 0 #b0b9be,
+  48px 36px 0 #b0b9be, 54px 36px 0 #b0b9be, 60px 36px 0 #b0b9be,
+  66px 36px 0 #b0b9be,72px 36px 0 #b0b9be, 78px 30px 0 #b0b9be, 42px -6px 0 #b0b9be,
+  36px -12px 0 #b0b9be, 36px -18px 0 #b0b9be;
+  
+  }
+main {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 250px;
+  gap: 30px;
+}
+main div {
+  overflow: hidden;
+  background: #fff;
+  border-radius: 6px;
+  border: 16px solid #fff;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.05);
+  font-family: 'VT323', monospace;
+  font-size: 18px;
+  text-align: center;
+}
+
+div a {
+  text-decoration: none;
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    color: #19418b;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    align-items: center;
+}
+
+div a:hover {
+  box-shadow: inset 200px 0 0 0 #0e2d66;
+  color: rgb(16, 16, 54);
+}
+
+
+div a:visited {
+  color: rgb(18, 245, 18);
+}
+
+main> p {
+  position: relative;
+  bottom: 15%;
+  font-family: 'Bungee', cursive;
+  font-size: 22px;
+  color: rgb(51, 245, 51)
+}
+
+main img {
+  min-width: 100%;
+  height: 100%;
+}
+main .short {
+  grid-row: span 1;
+}
+main .tall {
+  grid-row: span 2;
+}
+
+@media screen and (max-width: 960px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  main {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin-top: 20px;
+  }
+  nav {
+    grid-template-columns: 1fr;
+  }
+  nav h1{
+    grid-column: 1 / span 4;
+    grid-row: 1;
+  }  
+}
