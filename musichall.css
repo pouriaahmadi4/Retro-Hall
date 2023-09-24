@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Atomic+Age&family=Bungee&family=Bungee+Shade&family=Noto+Sans+Multani&family=Candal&family=PT+Serif&family=Calistoga&family=DotGothic16&family=Libre+Baskerville&family=Monoton&family=Nanum+Pen+Script&family=Press+Start+2P&family=VT323&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(https://forums.libretro.com/uploads/default/original/2X/9/928ae6bbbd636c4d41c5681db4c85368c4dd6833.png);
+    background-color:green;
+    background-blend-mode: overlay;
+    background-size: contain;
+  box-sizing: border-box;
+}
+
+header {
+  background: #122e46;
+  padding: 10px;
+  z-index: 200;
+  position: sticky;
+  top: 0px;
+  height: 10vh;
+}
+.navbar {
+  list-style: none;
+  border-radius: 10px;
+  background-color: #122e46;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+  align-items: center;
+  text-align: center;
+  max-width: 100%;
+  gap: 10px;
+}
+
+.navbar a {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  color: #2196f3;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-family: 'Press Start 2P', cursive;
+  font-weight: 400;
+  line-height: 17px;
+  font-size: 12px;
+  overflow: hidden;
+  transition: 0.2s;
+  border-radius: 3px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.navbar a:hover {
+  color: #141618;
+  background: #2196f3;
+  box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3 , 0 0 70px #2196f3  ;
+  transition-delay: 1s;
+}
+
+.navbar a span {
+  position: absolute;
+  display: block;
+}
+
+.navbar a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg,transparent,#2196f3);
+
+}
+
+.navbar a:hover span:nth-child(1) {
+  left: 100%;
+  transition: 1s;
+
+}
+
+.navbar a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg,transparent,#2196f3);
+
+}
+
+.navbar a:hover span:nth-child(3) {
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+
+.navbar a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg,transparent,#2196f3);
+
+}
+
+.navbar a:hover span:nth-child(2) {
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+
+.navbar a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg,transparent,#2196f3);
+
+}
+
+.navbar a:hover span:nth-child(4) {
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+}
+
+i {
+    color: #b9dcdf;
+    top:77px;
+    left: 240px;
+    display: block;
+ }
+
+#heading {
+  text-align: center;
+  font-family: 'Candal', sans-serif;
+  font-size: 300%;
+}
+
+#para {
+  font-family: 'Noto Sans Multani', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  padding: 30px;
+}
+
+
+main {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.wrapper {
+  position: relative;
+  width: 780px;
+  height: 600px;
+  border-radius: 20px;
+  padding: 35px 40px;
+  background: #606C5D;
+  top: 10vh;
+}
+
+.piano-keys {
+  list-style: none;
+  display: flex;
+  margin-top: 40px;
+  margin-left: -40px;
+}
+
+
+.key-white {
+  width: 70px;
+  height: 230px;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid #000;
+  transition:all 0.3s;
+  transform-origin: center top;
+}
+
+.key-white:hover {
+    transform: perspective(1100px) rotateX(-10deg);
+    opacity: 0.8;
+}
+
+.key-black {
+  width: 44px;
+  height: 140px;
+  z-index: 2;
+  margin: 0 -22px 0 -22px;
+  border-radius: 0 0 5px 5px;
+  background: #000;
+  transition:all 0.4s;
+  transform-origin: center top;
+}
+  
+.key-black:hover {
+    transform: perspective(1100px) rotateX(-20deg);
+}
